@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Laptop Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+            <select name="subject" required>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Order Issue">Order Issue</option>
+                <option value="Technical Support">Technical Support</option>
+                <option value="Feedback">Feedback</option>
+            </select>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        
+        <div class="info">
+            <p><strong>Email:</strong> support@laptopstore.com</p>
+            <p><strong>Phone:</strong> +1 234 567 890</p>
+            <p><strong>WhatsApp:</strong> +1 234 567 891</p>
+            <p><strong>Live Chat:</strong> <a href="#">Start Chat</a></p>
+            <p><strong>Address:</strong> 123 Tech Street, New York, NY</p>
+        </div>
+        
+        <div class="info">
+            <h3>Business Hours</h3>
+            <p>Monday - Friday: 9 AM - 6 PM</p>
+            <p>Saturday: 10 AM - 4 PM</p>
+            <p>Sunday: Closed</p>
+        </div>
+        
+        <div class="info">
+            <h3>Find Us on Google Maps</h3>
+            <iframe src="https://www.google.com/maps/embed?" allowfullscreen></iframe>
+        </div>
+        
+        <div class="info">
+            <h3>Follow Us</h3>
+            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
